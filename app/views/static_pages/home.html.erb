@@ -1,2 +1,122 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<header class = "navbar navbar-fixed-top" role="navigation">
+<div class = "container">
+  <nav class = "logo pull-left">QueroPronto</nav>
+  <nav class = "nav nav-pills pull-right">
+    <li><a href = '#evento'> Evento</a></li>
+    <li><a href = '#'> Contato</a></li>
+    <li class = "active"><a href = '#'> Apoie</a></li>
+  </nav>
+</div>
+</header>
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#home-carousel" data-slide-to="1"></li>
+    <li data-target="#home-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active slide0">
+      <h1 class="text-slide0"> QueroPronto </h1>
+      <h2>Unindo Empresas e Universidades</h2>
+    </div>
+    <div class = "item 1" >
+      <h1 class = "text-slide1"> 2 Cabeças pensam melhor do que 1.<br/> Que tal se forem muito mais? </h1>
+      <div class = "btn btn-default"> Quero Apoiar! </div>
+    </div>
+    <div class = "item 2" >
+      <h1 class = "text-slide2"><div class = "btn btn-default btn2">Ambiente e Metodologia</div><br/>que inspiram e incentivam o desenvolvimento de <br/> um grande número de inovações </h1>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#home-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#home-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div class = "row met">
+<a name = "evento"> </a>
+<div class = "container metodologia">
+  <h1>Trabalhamos para vencer</h1>
+  <h2 class = "subtitulo">Entenda o evento e por que acreditamos</h2>
+  <div class = "col-md-3">
+  <%= image_tag "IconStudyHat.png", class: "img-circle", onclick: "changeText('Equipe',TextoEquipe,ImgEquipe)"%>
+  <h3 id = "Equipe" class = "active" >Equipes<br/>Complementares</h3>
+  </div>
+  <div class = "col-md-3">
+  <%= image_tag "IconBubbles.png", class: "img-circle", onclick: "changeText('Ideia',TextoIdeia,ImgIdeia)"%>
+  <h3 id = "Ideia">Discutindo Problemas de Empresas</h3>
+  </div>
+  <div class = "col-md-3">
+  <%= image_tag "IconPackage.png", class: "img-circle", onclick: "changeText('Pacote',TextoPacote,ImgPacote)"%>
+  <h3 id = "Pacote" >Entregando <br/>Soluções</h3>
+  </div>
+  <div class = "col-md-3">
+  <%= image_tag "IconMoney.png", class: "img-circle", onclick: "changeText('Dinheiro',TextoDinheiro,ImgDinheiro)" %>
+  <h3 id= "Dinheiro">Tendo Visão de Negócio</h3>
+  </div>
+  <div class = "col-md-8" id= "textoMudado">
+  <h2>Nossas Equipes:</h2>
+  <p> Cada pessoa tem um bagagem de conhecimentos e experiências única, e essas bagagens podem se complementar e oferecer resultados muito produtivos. Acreditamos que, principalmente falando de inovação, quando juntarmos pessoas com backgrounds diferentes teremos algo muito maior que a soma dos participantes. Por isso, no QueroPronto teremos <span class = "highlight"> 6 equipes</span> de <span class = "highlight"> 6 pessoas </span> com habilidades complementares para que juntos possam desenolver algo que não conseguiriam sozinhos.
+  </p>
+  </div>
+  <div class = "col-md-4" id= "imagemMudada">
+  <%= image_tag "IconStudyHat2.png", class: "opaque" %>
+  </div>
+</div>
+</div>
+
+<div class = "row divisor" style="clear:both">
+  <div class = "container texto">
+    <h1>Inovando juntos e de forma rápida</h1>
+  </div>
+</div>
+
+<div class = "row">
+  <div class= "container sobre">
+    <h1> Construído para inspirar<br/></h1> <h2> Desenvolvido para ter resultado </h2>
+    <div class = "col-md-6">
+      <div class = "primeira">
+      <h3>Acreditamos na Inovação</h3>
+      <p>Inovação permite que empresas se adaptem a mudanças tecnológicas ou de mercado, sobrevivam a crises e recessões e criem novas oportunidades de mercado que não existiam.</p><p>E é por isso que empresas inovadoras geram uma maior margem de lucro, maior valor de ações e criam mais trabalhos. É o que traz resultados e realmente faz com que um mercado e empresa se desenvolvam.</p><p>Não é uma surpresa que diversos processos e técnicas tenham surgido pra sistematizar e gerir como ela é aplicada em empresas, inovar passou de ser uma tendência pra ser uma necessidade em quase qualquer área de atuação.
+      </p>
+      </div>
+    </div>
+    <div class = "col-md-6">
+      <div class = "segunda">
+      <h3>e na união de Empresas e Academia</h3>
+      <p>Devido ao rápido crescimento do meio de trabalho e do desenvolvimento e transformações que o meio acadêmico vem sofrendo, o assunto é ainda mais discutido.</p><p>As duas partes tem muito a ganhar com a aproximação. Com acadêmicos  podendo dar aplicações práticas pras suas pesquisas e empresas podendo estar em contato com as últimas técnicas e inovações.</p><p> Com o quero pronto, pretendemos entregar valor e aproximar as duas partes, fazendo um contato inicial que pode trazer muitos benefícios, tanto pra indústria quanto pra academia</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class = "row ap">
+  <div class = "container apoio">
+    <h1> Participe ou Apoie! </h1>
+    <h2> Venha fazer parte desse grupo de inovadores </h2>
+    <btn class= "btn btn-default"> <a href = 'https://docs.google.com/forms/d/1hKEvkoYL1ZmHpC1PUS6qvKnf1SqSZjM2a40VYbSr8JI/viewform'> Faça Parte </a></btn>
+  </div>
+</div>
+
+
+<div class = "contato">
+  <div class = "container">
+      <h1>Contato</h1>
+      <h2>Diga um oi</h2>
+      <p>Interessado em ajudar? Formar parceria? Tem sugestões? Dúvidas? Só quer deixar uma mensagem? Fale conosco nesse email:</p>
+      <p class = "cont">contato@queropronto.com.br</p>
+</div>
+
+<footer>
+
+</footer>
+
+
