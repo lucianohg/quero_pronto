@@ -1,11 +1,11 @@
 <header class = "navbar navbar-fixed-top" role="navigation">
 <div class = "container">
-  <nav class = "logo pull-left">QueroPronto</nav>
+  <nav class = "logo pull-left"><a href = '#top'> QueroPronto</a></nav>
   <nav class = "nav nav-pills pull-right">
     <li><a href = '#evento'> Evento</a></li>
-    <li><a href = '#Visão'> Evento</a></li>
-    <li><a href = '#'> Contato</a></li>
-    <li class = "active"><a href = '#'> Apoie</a></li>
+    <li><a href = '#motivacao'> Motivação</a></li>
+    <li><a href = '#contact'> Contato</a></li>
+    <li class = "active"><a href = '#apoio'> Participe</a></li>
   </nav>
 </div>
 </header>
@@ -14,7 +14,6 @@
   <ol class="carousel-indicators">
     <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#home-carousel" data-slide-to="1"></li>
-    <li data-target="#home-carousel" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -25,10 +24,7 @@
     </div>
     <div class = "item 1" >
       <h1 class = "text-slide1"> 2 Cabeças pensam melhor do que 1.<br/> Que tal se forem muito mais? </h1>
-      <div class = "btn btn-default"> Quero Apoiar! </div>
-    </div>
-    <div class = "item 2" >
-      <h1 class = "text-slide2"><div class = "btn btn-default btn2">Ambiente e Metodologia</div><br/>que inspiram e incentivam o desenvolvimento de <br/> um grande número de inovações </h1>
+      <div class = "btn btn-default"><a href = 'https://docs.google.com/forms/d/1hKEvkoYL1ZmHpC1PUS6qvKnf1SqSZjM2a40VYbSr8JI/viewform' style= 'text-decoration:none; color: #fff;'>Participe!</a></div>
     </div>
   </div>
 
@@ -47,19 +43,19 @@
   <h1>Trabalhamos para vencer</h1>
   <h2 class = "subtitulo">Entenda o evento e por que acreditamos</h2>
   <div class = "col-md-3">
-  <%= image_tag "IconStudyHat.png", class: "img-circle", onclick: "changeText('Equipe',TextoEquipe,ImgEquipe)"%>
+  <%= image_tag "IconStudyHat.png", class: "img-circle", onclick: "changeText('Equipe',TextoEquipe,'iconHat')"%>
   <h3 id = "Equipe" class = "active" >Equipes<br/>Complementares</h3>
   </div>
   <div class = "col-md-3">
-  <%= image_tag "IconBubbles.png", class: "img-circle", onclick: "changeText('Ideia',TextoIdeia,ImgIdeia)"%>
+  <%= image_tag "IconBubbles.png", class: "img-circle", onclick: "changeText('Ideia',TextoIdeia,'iconBubbles')"%>
   <h3 id = "Ideia">Discutindo Problemas de Empresas</h3>
   </div>
   <div class = "col-md-3">
-  <%= image_tag "IconPackage.png", class: "img-circle", onclick: "changeText('Pacote',TextoPacote,ImgPacote)"%>
+  <%= image_tag "IconPackage.png", class: "img-circle", onclick: "changeText('Pacote',TextoPacote,'iconPackage')"%>
   <h3 id = "Pacote" >Entregando <br/>Soluções</h3>
   </div>
   <div class = "col-md-3">
-  <%= image_tag "IconMoney.png", class: "img-circle", onclick: "changeText('Dinheiro',TextoDinheiro,ImgDinheiro)" %>
+  <%= image_tag "IconMoney.png", class: "img-circle", onclick: "changeText('Dinheiro',TextoDinheiro,'iconMoney')" %>
   <h3 id= "Dinheiro">Tendo Visão de Negócio</h3>
   </div>
   <div class = "col-md-8" id= "textoMudado">
@@ -67,8 +63,17 @@
   <p> Cada pessoa tem um bagagem de conhecimentos e experiências única, e essas bagagens podem se complementar e oferecer resultados muito produtivos. Acreditamos que, principalmente falando de inovação, quando juntarmos pessoas com backgrounds diferentes teremos algo muito maior que a soma dos participantes. Por isso, no QueroPronto teremos <span class = "highlight"> 6 equipes</span> de <span class = "highlight"> 6 pessoas </span> com habilidades complementares para que juntos possam desenolver algo que não conseguiriam sozinhos.
   </p>
   </div>
-  <div class = "col-md-4" id= "imagemMudada">
+  <div class = "col-md-4" id= "iconHat">
   <%= image_tag "IconStudyHat2.png", class: "opaque" %>
+  </div>
+  <div class = "col-md-4" id= "iconBubbles" style= "display:none;">
+  <%= image_tag "IconBubbles2.png"%>
+  </div>
+  <div class = "col-md-4" id= "iconPackage" style= "display:none;">
+  <%= image_tag "IconPackage2.png"  %>
+  </div>
+  <div class = "col-md-4" id= "iconMoney" style= "display:none;">
+  <%= image_tag "IconMoney2.png", class: "opaque" %>
   </div>
 </div>
 </div>
@@ -80,6 +85,7 @@
 </div>
 
 <div class = "row">
+  <a name = "motivacao"> </a>
   <div class= "container sobre">
     <h1> Construído para inspirar<br/></h1> <h2> Desenvolvido para ter resultado </h2>
     <div class = "col-md-6">
@@ -100,8 +106,9 @@
 
 
 <div class = "row ap">
+  <a name = "apoio"> </a>
   <div class = "container apoio">
-    <h1> Participe ou Apoie! </h1>
+    <h1> Participe! </h1>
     <h2> Venha fazer parte desse grupo de inovadores </h2>
     <btn class= "btn btn-default"> <a href = 'https://docs.google.com/forms/d/1hKEvkoYL1ZmHpC1PUS6qvKnf1SqSZjM2a40VYbSr8JI/viewform'> Faça Parte </a></btn>
   </div>
@@ -109,6 +116,7 @@
 
 
 <div class = "contato">
+  <a name = "contact"> </a>
   <div class = "container">
       <h1>Contato</h1>
       <h2>Diga um oi</h2>

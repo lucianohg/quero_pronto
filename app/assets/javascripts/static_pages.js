@@ -17,15 +17,24 @@ var TextoDinheiro = '<h2>Pensando como negócio</h2><p>Todos os participantes da
 function changeText(id,text,imgName)
 {
   unactive('Pacote');
+  unactiveImg('iconPackage')
   unactive('Equipe');
+  unactiveImg('iconHat')
   unactive('Ideia');
+  unactiveImg('iconBubbles')
   unactive('Dinheiro');
+  unactiveImg('iconMoney')
   document.getElementById('textoMudado').innerHTML= text;
-  document.getElementById('imagemMudada').innerHTML= imgName;
+  document.getElementById(imgName).style.display= "block";
   document.getElementById(id).className = "active";
 }
 
 function unactive (id)
 {
   document.getElementById(id).className = "";
+}
+
+function unactiveImg (id)
+{
+  document.getElementById(id).style.display = "none";
 }

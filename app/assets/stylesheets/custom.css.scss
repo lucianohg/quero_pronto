@@ -120,7 +120,8 @@ header{
 }
 
 .met{
-  height: 900px;
+  height: 950px;
+  width: 100%;
 }
 .metodologia{
   padding-top: 50px;
@@ -223,6 +224,7 @@ header{
     border-bottom: 15px solid rgba(52, 73, 94,.4);
   }
   h1{
+    padding-top: 50px;
     font-size: 150px;
     border-bottom: 2px solid rgba(255, 255, 255,1);
   }
